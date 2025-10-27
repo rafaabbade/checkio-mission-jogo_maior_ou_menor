@@ -1,22 +1,32 @@
 <!-- Describe task in general -->
 <p>
-    {{TIPO}}
+    <strong>Verificação de Aprendizagem:</strong> Avalie sua compreensão. Tente resolver sem consultar materiais, usando apenas seu conhecimento. Identifique áreas que precisam de revisão.
 </p>
 <h4>Enunciado</h4>
 
 <p>
-    {{ENUNCIADO}}
+    Uma empresa está desenvolvendo um aplicativo para celular chamado "Maior ou Menor", que tem como objetivo estimular o gosto por matemática em jovens.
+
+O jogo sorteia um número inteiro e o jogador tem que adivinhar qual é. O jogo é composto de uma ou mais rodadas. A cada rodada, o jogador digita um número e o aplicativo responde com:
+
+- "menor" se o número digitado é MAIOR do que o sorteado;
+- "maior" se o número digitado é MENOR do que o sorteado; e
+- "correto" se o número digitado é IGUAL ao número sorteado.
+
+O jogo termina quando o jogador acerta o número sorteado.
+
+Dados o número sorteado `x` e uma lista de `tentativas` de um jogador, você deve escrever uma função que simule o comportamento do aplicativo e retorne uma lista com as respostas.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> {{ENTRADA}}
+    <strong>Entrada: </strong> Um número inteiro `x` (o número sorteado) e uma lista de inteiros `tentativas`.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Uma lista de strings ("menor", "maior" ou "correto") correspondente a cada tentativa.
 </p>
 
 
@@ -32,11 +42,12 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    simular_jogo(103, [1000, 1, 500, 200, 100, 110, 105, 103]) >> ["menor", "maior", "menor", "menor", "maior", "menor", "menor", "correto"]
 </pre>
 {% endif %}
 </div>
 <h4>Habilidades</h4>
 <ul>
-    {{HABILIDADES}}
+    Lógica de Condições e Decisões
+Controle de Fluxo e Iteração
 </ul>

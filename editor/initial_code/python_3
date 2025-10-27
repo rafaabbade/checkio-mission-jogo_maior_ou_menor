@@ -1,1 +1,17 @@
-{{CODIGO INICIAL}}
+def simular_jogo(x, tentativas):
+    # Seu código aqui
+    return []
+
+print("Example:")
+print(simular_jogo(103, [1000, 1, 500, 200, 100, 110, 105, 103]))
+
+# Casos de teste
+assert simular_jogo(103, [1000, 1, 500, 200, 100, 110, 105, 103]) == [
+    "menor", "maior", "menor", "menor", "maior", "menor", "menor", "correto"
+]
+
+assert simular_jogo(10000, [10000]) == ["correto"]
+
+assert simular_jogo(-2, [0, -1, -2]) == ["menor", "menor", "correto"]
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
